@@ -12,16 +12,21 @@ function Footer() {
       site {
         siteMetadata {
           title
-          description
           author
+          description
+          siteUrl
+          social {
+            github
+            linkedin
+          }
         }
       }
     }
   `);
 
   const codeString = `export const profile = {
-  name: 'Sergio Vicente de las Heras',
-  description: \`Hi, I'm Sergio 👋 I'm a enthusiastic software engineer located in Madrid, Spain. I currently work as a full stack developer.\`,
+  name: '${site.siteMetadata.author}',
+  description: \`${site.siteMetadata.description}\`,
   stack: ['.NET Core', 'React', 'Elasticsearch'],
   location: ['Madrid, Spain', 'Fully remote'],
   salary: {
@@ -29,8 +34,8 @@ function Footer() {
     max_eur: 60000
   },
   contact: {
-    github: 'https://github.com/echosergio',
-    linkedin: 'https://www.linkedin.com/in/echosergio'
+    github: '${site.siteMetadata.social.github}',
+    linkedin: '${site.siteMetadata.social.linkedin}'
   },
   version: '${new Date().getFullYear() - 1992}'
 };`;

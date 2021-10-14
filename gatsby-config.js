@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Sergio Vicente de las Heras',
+    title: 'Portfolio',
     author: 'Sergio Vicente de las Heras',
+    description: `Hi, I'm Sergio 👋 I'm a enthusiastic software engineer located in Madrid, Spain. I currently work as a full stack developer.`,
     siteUrl: 'https://echosergio.dev',
     social: {
       github: 'https://github.com/echosergio',

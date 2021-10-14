@@ -21,7 +21,7 @@ function Footer() {
 
   const codeString = `export const profile = {
   name: 'Sergio Vicente de las Heras',
-  description: \`Hi, I'm Sergio 👋 I'm a enthusiastic software engineer located in Madrid, Spain. I currently work as a full stack developer.\`
+  description: \`Hi, I'm Sergio 👋 I'm a enthusiastic software engineer located in Madrid, Spain. I currently work as a full stack developer.\`,
   stack: ['.NET Core', 'React', 'Elasticsearch'],
   location: ['Madrid, Spain', 'Fully remote'],
   salary: {
@@ -32,7 +32,7 @@ function Footer() {
     github: 'https://github.com/echosergio',
     linkedin: 'https://www.linkedin.com/in/echosergio'
   },
-  version: '${new Date().getFullYear() - 1992}',
+  version: '${new Date().getFullYear() - 1992}'
 };`;
 
   return (

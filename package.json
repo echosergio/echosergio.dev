@@ -14,7 +14,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
@@ -53,6 +54,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
   }

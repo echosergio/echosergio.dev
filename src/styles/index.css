@@ -1,0 +1,58 @@
+:root {
+  /** fonts **/
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-code: 'Courier Prime';
+
+  /** neutral **/
+  --color-neutral: #6c757d;
+  --color-neutral-contrast: #ffffff;
+  --color-neutral-shade: #3c4257;
+  --color-neutral-tint: #f4f5f7;
+  --color-neutral-background: #ffffff;
+
+  /** success **/
+  --color-success: #40945a;
+  --color-success-contrast: #ffffff;
+  --color-success-shade: #0e6245;
+  --color-success-tint: #42d77d;
+  --color-success-background: #cbf4c9;
+
+  /** warning **/
+  --color-warning: #ffc409;
+  --color-warning-contrast: #000000;
+  --color-warning-shade: #e0ac08;
+  --color-warning-tint: #ffca22;
+  --color-warning-background: #f8e5b9;
+
+  /** danger **/
+  --color-danger: #d32130;
+  --color-danger-contrast: #ffffff;
+  --color-danger-shade: #983705;
+  --color-danger-tint: #ed576b;
+  --color-danger-background: #f8e5b9;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  font-family: var(--font-family);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  min-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

@@ -1,0 +1,8 @@
+export const breakpoint = {
+  xs: 480,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1312,
+  xxl: 1920,
+};

@@ -15,7 +15,7 @@ const IndexPage = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "echosergio.jpeg" }) {
+        desktop: file(relativePath: { eq: "echosergio.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
@@ -77,7 +77,7 @@ const StyledBackgroundImage = styled(BackgroundImage)`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-position: bottom center;
+  background-position: center center;
   background-repeat: repeat-y;
   background-size: cover;
 `;
@@ -86,7 +86,7 @@ const StyledTyped = styled(Typed)`
   position: absolute;
   color: #fff;
   font-family: 'Courier Prime';
-  bottom: 100px;
+  bottom: 50px;
 
   @media (min-width: ${breakpoint.md}px) {
     padding: 50px;

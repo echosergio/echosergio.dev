@@ -30,8 +30,7 @@ function Footer() {
   stack: ['.NET Core', 'React', 'Elasticsearch'],
   location: ['Madrid, Spain', 'Fully remote'],
   salary: {
-    min_eur: 50000,
-    max_eur: 60000
+    min_eur: 55000
   },
   contact: {
     github: '${site.siteMetadata.social.github}',
